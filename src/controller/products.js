@@ -4,12 +4,12 @@ import dayjs from "dayjs"
 
 export async function creatProducts(req, res) {
 
-    const { name, price, unit, category, picture} = req.body
+    const products = req.body
     const userSession = res.locals.session
 
 
     try {
-        await db.collection("products").insertOne({name:name, price:price, unit:unit, category:category, picture:picture })
+        await db.collection("products").insertMany(products)
 
         res.status(201).send("create")
 

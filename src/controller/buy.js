@@ -4,7 +4,7 @@ import dayjs from "dayjs"
 
 export async function creatbuy(req, res) {
 
-    const { name, price, cont, username, street, number, district, city, state, zipcode, namecard, numbercard, validity, securitycode, day } = req.body
+    const { name, price, products, username, street, number, district, city, state, zipcode, namecard, numbercard, validity, securitycode, day } = req.body
     const userSession = res.locals.session
 
 
@@ -12,7 +12,7 @@ export async function creatbuy(req, res) {
         await db.collection("sale").insertOne({
             name:name, 
             price:price, 
-            cont:cont,
+            products:products,
             day: dayjs().format('DD/MM/YYYY'),
             username: username,
             street: street,

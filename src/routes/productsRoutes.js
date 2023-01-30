@@ -1,6 +1,7 @@
 import { Router } from 'express'
 import { creatProducts, listProducts } from '../controller/products.js'
 
+
 const productsRouter = Router()
 
 
