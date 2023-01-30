@@ -14,7 +14,7 @@ export async function creatbuy(req, res) {
             price:price, 
             cont:cont,
             day: dayjs().format('DD/MM/YYYY'),
-            cliente:[{username: username,
+            username: username,
             street: street,
             number: number,
             district: district,
@@ -24,7 +24,7 @@ export async function creatbuy(req, res) {
             namecard: namecard,
             numbercard: numbercard,
             validity: validity,
-            securitycode: securitycode}],
+            securitycode: securitycode
         })
 
         res.status(201).send("create")
