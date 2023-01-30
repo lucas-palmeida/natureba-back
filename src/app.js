@@ -3,6 +3,7 @@ import cors from "cors";
 import authRouter from "./routes/authRoutes.js"; 
 import naturebaRouter from "./routes/storeRoutes.js";
 import productsRouter from "./routes/productsRoutes.js";
+import buyRouter from "./routes/buyRoutes.js";
 
 
 
@@ -11,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 
-app.use([authRouter,/*naturebaRouter,*/productsRouter])
+app.use([authRouter,/*naturebaRouter,*/productsRouter,buyRouter])
 
 
 
