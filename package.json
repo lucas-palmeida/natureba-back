@@ -1,11 +1,11 @@
 {
   "name": "projeto15-natureba-back",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon src/app.js"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
   },
   "keywords": [],
   "author": "",
@@ -22,5 +22,14 @@
     "node": "^19.4.0",
     "nodemon": "^2.0.20",
     "uuid": "^9.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucas-palmeida/projeto15-natureba-back.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lucas-palmeida/projeto15-natureba-back/issues"
+  },
+  "homepage": "https://github.com/lucas-palmeida/projeto15-natureba-back#readme",
+  "description": ""
 }
